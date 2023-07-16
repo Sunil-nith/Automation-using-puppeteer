@@ -43,7 +43,6 @@ const puppeteer = require('puppeteer');
 
    
     const selectSellToken = async () => {
-
         try {
             // There are two buttons of same class and here we have to click on first one.
             const buttons = await page.$$('.css-qjhap')
