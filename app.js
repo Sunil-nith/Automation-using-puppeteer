@@ -21,8 +21,28 @@ const puppeteer = require('puppeteer');
     }
   };
 
-  await setChain();
+  const setYouSell = async () => {
+    try{
+      await page.focus('.css-lv0ed5');
 
+      // Press Ctrl+A to select the existing value
+      await page.keyboard.down('Control');
+      await page.keyboard.press('A');
+      await page.keyboard.up('Control');
   
+      // Press Backspace to delete the existing value
+      await page.keyboard.press('Backspace');
+  
+      // Type the new value
+      await page.keyboard.type('12');
+     }catch(error){
+      console.error('Error occurred during setYouSell:', error.message);
+    }
+  };
+
+  await setChain();
+  await setYouSell();
+
+
 // Keep the browser window open
 })();
