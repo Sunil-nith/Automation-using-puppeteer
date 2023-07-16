@@ -1,7 +1,7 @@
 # Automation-using-puppeteer
 
 
-*This project demonstrates basic automation using Puppeteer to perform user actions on the website swap.defillama.com (https://swap.defillama.com/);
+*This project demonstrates basic automation using Puppeteer to perform user actions on the https://swap.defillama.com .
 
 ### Built With
 
@@ -45,9 +45,9 @@ Before running the application, make sure you have the following prerequisites i
 
 
 ## Notes
-The script assumes that swap.defillama.com (https://swap.defillama.com/) is accessible at the time of execution. If the website's URL or structure changes, the script may require adjustments.
+The script assumes that  https://swap.defillama.com is accessible at the time of execution. If the website's URL or structure changes, the script may require adjustments.
 ## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvement, please create an issue or submit a pull request
+Contributions are welcome! If you find any issues or have suggestions for improvement, please create an issue or submit a pull request.
 
 ## Contact
 
