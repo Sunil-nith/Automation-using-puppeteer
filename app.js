@@ -64,9 +64,36 @@ const puppeteer = require('puppeteer');
     }
   };
 
+  const selectBuyToken = async () => {
+    try {
+       // There are two buttons of same class and here we have to click on second one.
+     const buttons = await page.$$('.css-qjhap')
+     const btn = buttons[1];
+     await btn.click();
+     
+     // Then we will type token name in searchBox ,that we want to select.
+     await page.waitForSelector('div:nth-child(2) > input');
+     await page.type('div:nth-child(2) > input', 'USD Coin');
+     
+     //Then we will wait for result of tokens that we were typed.
+     await page.waitForTimeout(1000);
+     
+     //Then we will click on the first result.
+     await page.waitForSelector('div.List > div > div:nth-child(2) > div');
+     await page.click('div.List > div > div:nth-child(2) > div');
+ 
+     //Then we will wait for the available routes.
+     await page.waitForTimeout(4000);
+      
+    } catch (error) {
+      console.error('Error occurred during selectBuyToken:', error.message);
+    }
+  };
+
   await setChain();
   await setYouSell();
   await selectSellToken();
+  await selectBuyToken();
 
 
 // Keep the browser window open
