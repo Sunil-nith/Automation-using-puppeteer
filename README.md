@@ -1,7 +1,7 @@
 # Automation-using-puppeteer
 
 
-*This project demonstrates basic automation using Puppeteer to perform user actions on the https://swap.defillama.com .
+* This project demonstrates basic automation using Puppeteer to perform user actions on the https://swap.defillama.com .
 
 ### Built With
 
