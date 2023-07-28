@@ -3,7 +3,7 @@
 
 ## Demo Video
 https://drive.google.com/file/d/1tpAibGxKtlyf3iykVLuoqgEqJm_o7gSy/view?usp=drive_link
-Note: During recording of this demo video I used slowMo (slow motion) is to make it slow to record a demo video of the app's functionality becaue the automation process happens too quickly.
+* Note: During recording of this demo video I used slowMo (slow motion) is to make it slow to record a demo video of the app's functionality becaue the automation process happens too quickly.
 ## Built With
 
 * Node.js
