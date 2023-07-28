@@ -1,7 +1,7 @@
-# Automation-using-puppeteer
+# Puppeteer Swap Automation
 
 
-* This project demonstrates basic automation using Puppeteer to perform user actions on the https://swap.defillama.com .
+* This Node.js script uses Puppeteer to automate the process of swapping tokens on the https://swap.defillama.com website. It simulates user interactions on the website to set the desired chain, amount to sell, select tokens for selling and buying, and continuously selects the second route to perform the swap.
 
 ### Built With
 
@@ -42,7 +42,13 @@ Before running the application, make sure you have the following prerequisites i
    npm start
    ```
 
+## Customization
+The current script is tailored to swap "WBTC" for "USD Coin" on the https://swap.defillama.com website. If you want to customize the token swapping process, you can modify the following functions in the index.js file:
 
+* setChain: Change the value passed to page.type('#react-select-2-input', 'YourDesiredChain') to set a different chain.
+* setYouSell: Change the value passed to await page.keyboard.type('YourDesiredAmount') to set a different amount to sell.
+* selectSellToken: Change the value passed to await page.type('div:nth-child(2) > input', 'YourDesiredToken') to select a different token for selling.
+* selectBuyToken: Change the value passed to await page.type('div:nth-child(2) > input', 'YourDesiredToken') to select a different token for buying.
 
 ## Notes
 The script assumes that  https://swap.defillama.com is accessible at the time of execution. If the website's URL or structure changes, the script may require adjustments.
